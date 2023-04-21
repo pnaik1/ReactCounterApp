@@ -174,7 +174,7 @@ export const Forms: React.FunctionComponent = () => {
           helperText={
             <FormHelperText
               icon={<ExclamationCircleIcon />}
-              isHidden={validated! == "default"}
+              isHidden={validated! === "default"}
             >
               Please enter your name
             </FormHelperText>

@@ -18,16 +18,12 @@ function App() {
     <>
       <BrowserRouter>
         <Breadcrumb>
-          <BreadcrumbItem to="/">Section home</BreadcrumbItem>
-          <BreadcrumbItem to="/Counter">Form</BreadcrumbItem>
-          <BreadcrumbItem to="#">Section title</BreadcrumbItem>
-          <BreadcrumbItem to="#" isActive>
-            Section landing
-          </BreadcrumbItem>
+          <BreadcrumbItem to="/">Counter Page</BreadcrumbItem>
+          <BreadcrumbItem to="/Home">Home Page</BreadcrumbItem>
         </Breadcrumb>
         <Routes>
           <Route path="/" element={<Counter initialCount={0} />} />
-          <Route path="/Counter" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>
